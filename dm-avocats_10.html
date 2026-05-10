@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D & M Avocats — Cabinet d'avocats · Lille · Paris · Lyon</title>
+<meta name="description" content="D & M Avocats — Cabinet d'avocats spécialisé en droit de la fonction publique, droit du travail et droit administratif. 38 avocats, 3 bureaux à Lille, Paris et Lyon. 45 ans d'exercice, plus de 3000 dossiers traités.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="D & M Avocats — Cabinet d'avocats">
+<meta property="og:description" content="Droit de la fonction publique, droit du travail, droit administratif. 38 avocats, 45 ans d'exercice, +3000 dossiers traités.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1C2B4A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#1C2B4A;
+  --navy-light:#2A3F6B;
+  --navy-pale:#E8EDF5;
+  --gold:#8B6F3E;
+  --gold-light:#B8973A;
+  --gold-pale:#F5F0E8;
+  --cream:#FAFAF7;
+  --warm:#F2EDE4;
+  --dark:#1A1A1A;
+  --mid:#5A5A5A;
+  --light:#9A9A9A;
+  --rule:#D8D2C8;
+  --serif:'EB Garamond',Georgia,serif;
+  --display:'Cormorant Garamond',Georgia,serif;
+  --sans:'Jost',system-ui,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--serif);font-size:17px;line-height:1.75;color:var(--dark);background:var(--cream);overflow-x:hidden}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--navy);border-bottom:1px solid rgba(139,111,62,0.25)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 2.5rem;display:flex;align-items:center;justify-content:space-between;height:68px}
+.nav-brand{display:flex;flex-direction:column;gap:1px}
+.nav-brand-name{font-family:var(--sans);font-size:15px;font-weight:600;letter-spacing:0.18em;color:#fff;text-transform:uppercase}
+.nav-brand-sub{font-family:var(--sans);font-size:10px;font-weight:300;letter-spacing:0.22em;color:var(--gold-light);text-transform:uppercase}
+.nav-links{display:flex;gap:2.2rem;list-style:none}
+.nav-links a{font-family:var(--sans);font-size:12px;font-weight:400;letter-spacing:0.1em;color:rgba(255,255,255,0.75);text-decoration:none;text-transform:uppercase;transition:color .2s;cursor:pointer}
+.nav-links a:hover,.nav-links a.active{color:var(--gold-light)}
+.nav-cta{font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-light);border:1px solid var(--gold);padding:8px 20px;text-decoration:none;transition:all .2s;cursor:pointer}
+.nav-cta:hover{background:var(--gold);color:#fff}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.nav-hamburger span{display:block;width:24px;height:1px;background:rgba(255,255,255,0.8);transition:all .25s}
+.nav-mobile{display:none;position:fixed;top:68px;left:0;right:0;background:var(--navy);border-top:1px solid rgba(139,111,62,0.2);padding:1.5rem 2.5rem;z-index:99;flex-direction:column;gap:1.2rem}
+.nav-mobile.open{display:flex}
+.nav-mobile a{font-family:var(--sans);font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.75);text-decoration:none;padding:0.6rem 0;border-bottom:1px solid rgba(255,255,255,0.06);cursor:pointer}
+.nav-mobile a:last-child{border-bottom:none}
+@media(max-width:900px){.nav-links{display:none}.nav-cta{display:none}.nav-hamburger{display:flex}}
+
+/* ── HERO ── */
+#hero{min-height:100vh;background:var(--navy);display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;padding-top:68px}
+.hero-bg-lines{position:absolute;inset:0;opacity:0.04}
+.hero-bg-lines::before{content:'';position:absolute;top:-200px;right:-200px;width:700px;height:700px;border:1px solid var(--gold-light);border-radius:50%}
+.hero-bg-lines::after{content:'';position:absolute;bottom:-300px;left:-100px;width:800px;height:800px;border:1px solid #fff;border-radius:50%}
+.hero-inner{max-width:1200px;margin:0 auto;padding:0 2.5rem;display:grid;grid-template-columns:1fr 420px;gap:5rem;align-items:center}
+.hero-eyebrow{font-family:var(--sans);font-size:11px;font-weight:400;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold-light);margin-bottom:1.8rem;display:flex;align-items:center;gap:12px}
+.hero-eyebrow::before{content:'';display:block;width:32px;height:1px;background:var(--gold)}
+.hero-h1{font-family:var(--display);font-size:clamp(3rem,5.5vw,5rem);font-weight:300;line-height:1.08;color:#fff;margin-bottom:1.8rem;letter-spacing:-0.01em}
+.hero-h1 em{font-style:italic;color:var(--gold-light)}
+.hero-lead{font-family:var(--serif);font-size:17px;line-height:1.8;color:rgba(255,255,255,0.65);margin-bottom:2.8rem;max-width:520px}
+.hero-actions{display:flex;gap:1.2rem;align-items:center}
+.btn-primary{font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;background:var(--gold);color:#fff;padding:14px 32px;border:none;cursor:pointer;transition:background .2s;text-decoration:none;display:inline-block}
+.btn-primary:hover{background:var(--gold-light)}
+.btn-ghost-light{font-family:var(--sans);font-size:11px;font-weight:400;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.25);padding:14px 32px;cursor:pointer;transition:all .2s;text-decoration:none;display:inline-block}
+.btn-ghost-light:hover{border-color:rgba(255,255,255,0.6);color:#fff}
+.hero-card{background:rgba(255,255,255,0.04);border:1px solid rgba(139,111,62,0.2);padding:2.2rem}
+.hero-card-label{font-family:var(--sans);font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold-light);margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid rgba(139,111,62,0.2)}
+.hero-stat{padding:1rem 0;border-bottom:1px solid rgba(255,255,255,0.07)}
+.hero-stat:last-child{border-bottom:none}
+.hero-stat-num{font-family:var(--display);font-size:2.2rem;font-weight:300;color:#fff;line-height:1}
+.hero-stat-lbl{font-family:var(--sans);font-size:11px;font-weight:300;color:rgba(255,255,255,0.5);letter-spacing:0.06em;margin-top:4px}
+.hero-scroll{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer}
+.hero-scroll-line{width:1px;height:48px;background:linear-gradient(to bottom,var(--gold),transparent);animation:scrollPulse 2s ease-in-out infinite}
+.hero-scroll-lbl{font-family:var(--sans);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.35)}
+@keyframes scrollPulse{0%,100%{opacity:.3;transform:scaleY(1)}50%{opacity:1;transform:scaleY(1.1)}}
+
+/* ── SECTIONS COMMUNES ── */
+section{padding:7rem 0}
+.section-inner{max-width:1200px;margin:0 auto;padding:0 2.5rem}
+.section-eyebrow{font-family:var(--sans);font-size:10px;font-weight:400;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:flex;align-items:center;gap:10px}
+.section-eyebrow::before{content:'';display:block;width:24px;height:1px;background:var(--gold)}
+.section-h2{font-family:var(--display);font-size:clamp(2rem,3.5vw,3rem);font-weight:300;line-height:1.15;color:var(--navy);margin-bottom:1.2rem;letter-spacing:-0.01em}
+.section-h2 em{font-style:italic;color:var(--gold)}
+.section-lead{font-family:var(--serif);font-size:17px;color:var(--mid);line-height:1.8;max-width:600px}
+.rule{width:48px;height:1px;background:var(--gold);margin:2rem 0}
+
+/* ── EXPERTISES ── */
+#expertises{background:var(--cream)}
+.expertises-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);margin-top:4rem}
+.expertise-card{background:var(--cream);padding:2.2rem 2rem;position:relative;overflow:hidden;cursor:default;transition:background .25s}
+.expertise-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.4,0,.2,1)}
+.expertise-card:hover{background:#fff}
+.expertise-card:hover::before{transform:scaleX(1)}
+.expertise-num{font-family:var(--sans);font-size:10px;letter-spacing:0.2em;color:var(--gold);margin-bottom:1.2rem;display:block}
+.expertise-title{font-family:var(--display);font-size:1.45rem;font-weight:400;color:var(--navy);line-height:1.25;margin-bottom:1rem}
+.expertise-body{font-family:var(--serif);font-size:15px;color:var(--mid);line-height:1.75}
+.expertise-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:1.4rem}
+.expertise-tag{font-family:var(--sans);font-size:10px;letter-spacing:0.08em;color:var(--gold);border:1px solid var(--rule);padding:3px 10px}
+
+/* ── CABINET ── */
+#cabinet{background:var(--navy)}
+#cabinet .section-h2{color:#fff}
+#cabinet .section-lead{color:rgba(255,255,255,0.6)}
+#cabinet .rule{background:var(--gold)}
+.cabinet-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;margin-top:4rem}
+.cabinet-values{display:flex;flex-direction:column;gap:0}
+.value-item{padding:1.8rem 0;border-bottom:1px solid rgba(255,255,255,0.08);display:grid;grid-template-columns:40px 1fr;gap:1.2rem;align-items:start}
+.value-item:first-child{padding-top:0}
+.value-num{font-family:var(--display);font-size:1.1rem;font-weight:300;color:var(--gold);padding-top:2px}
+.value-title{font-family:var(--sans);font-size:13px;font-weight:500;letter-spacing:0.06em;color:#fff;text-transform:uppercase;margin-bottom:0.5rem}
+.value-body{font-family:var(--serif);font-size:15px;color:rgba(255,255,255,0.55);line-height:1.75}
+.cabinet-quote{background:rgba(255,255,255,0.04);border-left:2px solid var(--gold);padding:2.5rem;position:relative}
+.cabinet-quote blockquote{font-family:var(--display);font-size:1.5rem;font-weight:300;font-style:italic;color:rgba(255,255,255,0.9);line-height:1.5;margin-bottom:1.5rem}
+.cabinet-quote cite{font-family:var(--sans);font-size:11px;letter-spacing:0.1em;color:var(--gold-light);text-transform:uppercase}
+.cabinet-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,0.06);margin-top:2rem}
+.c-stat{background:var(--navy);padding:1.5rem}
+.c-stat-n{font-family:var(--display);font-size:2.5rem;font-weight:300;color:var(--gold-light);line-height:1}
+.c-stat-l{font-family:var(--sans);font-size:11px;color:rgba(255,255,255,0.45);letter-spacing:0.06em;margin-top:6px}
+
+/* ── ASSOCIÉS ── */
+#associes{background:var(--warm)}
+.associes-intro{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:end;margin-bottom:4rem}
+.associes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.avocat-card{background:#fff;border:1px solid var(--rule);overflow:hidden;transition:border-color .25s}
+.avocat-card:hover{border-color:var(--gold)}
+.avocat-photo{height:220px;background:var(--navy-pale);position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:flex-start;padding:1.2rem}
+.avocat-initials{width:52px;height:52px;background:var(--navy);color:rgba(255,255,255,0.85);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1.2rem;font-weight:300}
+.avocat-photo-bg{position:absolute;inset:0;opacity:0.04}
+.avocat-body{padding:1.5rem}
+.avocat-name{font-family:var(--display);font-size:1.2rem;font-weight:400;color:var(--navy);margin-bottom:4px}
+.avocat-role{font-family:var(--sans);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.avocat-spec{font-family:var(--serif);font-size:14px;color:var(--mid);line-height:1.65}
+.avocat-bar{height:1px;background:var(--rule);margin:1rem 0}
+.avocat-edu{font-family:var(--sans);font-size:11px;color:var(--light);font-style:italic}
+
+/* ── APPROCHE ── */
+#approche{background:var(--cream)}
+.approche-inner{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
+.approche-steps{display:flex;flex-direction:column;gap:0;margin-top:3rem}
+.step{display:grid;grid-template-columns:56px 1fr;align-items:start;padding:1.8rem 0;border-bottom:1px solid var(--rule)}
+.step:last-child{border-bottom:none}
+.step-num{font-family:var(--display);font-size:2rem;font-weight:300;color:var(--gold);opacity:0.5;line-height:1}
+.step-title{font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--navy);margin-bottom:0.5rem}
+.step-body{font-family:var(--serif);font-size:15px;color:var(--mid);line-height:1.75}
+.approche-visual{background:var(--navy);padding:3rem;position:relative}
+.approche-visual-label{font-family:var(--sans);font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold-light);margin-bottom:2rem}
+.domaine-item{padding:1rem 0;border-bottom:1px solid rgba(255,255,255,0.07);display:flex;justify-content:space-between;align-items:center}
+.domaine-item:last-child{border-bottom:none}
+.domaine-name{font-family:var(--serif);font-size:15px;color:rgba(255,255,255,0.8)}
+.domaine-bar-wrap{width:100px;height:1px;background:rgba(255,255,255,0.1);position:relative}
+.domaine-bar-fill{height:3px;background:var(--gold);position:absolute;top:-1px;left:0;border-radius:0}
+
+/* ── CONTACT ── */
+#contact{background:var(--navy)}
+#contact .section-h2{color:#fff}
+#contact .rule{background:var(--gold)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;margin-top:4rem}
+.contact-info-block{margin-bottom:2rem}
+.contact-city{font-family:var(--sans);font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold-light);margin-bottom:0.8rem}
+.contact-address{font-family:var(--serif);font-size:16px;color:rgba(255,255,255,0.7);line-height:1.8}
+.contact-rule{height:1px;background:rgba(255,255,255,0.08);margin:2rem 0}
+.contact-form{display:flex;flex-direction:column;gap:1rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-group{display:flex;flex-direction:column;gap:6px}
+.form-group label{font-family:var(--sans);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.5)}
+.form-group input,.form-group select,.form-group textarea{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);color:#fff;padding:12px 16px;font-family:var(--serif);font-size:15px;outline:none;transition:border-color .2s;width:100%}
+.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,0.25)}
+.form-group input:focus,.form-group textarea:focus{border-color:var(--gold)}
+.form-group textarea{resize:vertical;min-height:100px}
+.form-group select{appearance:none;cursor:pointer;color:rgba(255,255,255,0.75)}
+.form-group select option{background:var(--navy);color:#fff}
+.form-submit{font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;background:var(--gold);color:#fff;padding:14px 32px;border:none;cursor:pointer;transition:background .2s;align-self:flex-start;margin-top:0.5rem}
+.form-submit:hover{background:var(--gold-light)}
+.form-note{font-family:var(--sans);font-size:11px;color:rgba(255,255,255,0.3);margin-top:0.5rem}
+
+/* ── FOOTER ── */
+footer{background:#0E1826;padding:3rem 0 2rem}
+.footer-inner{max-width:1200px;margin:0 auto;padding:0 2.5rem}
+.footer-top{display:grid;grid-template-columns:1fr auto;align-items:center;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,0.06)}
+.footer-brand{font-family:var(--sans);font-size:14px;font-weight:600;letter-spacing:0.18em;color:rgba(255,255,255,0.7);text-transform:uppercase}
+.footer-cities{font-family:var(--sans);font-size:10px;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;margin-top:4px}
+.footer-links{display:flex;gap:2rem}
+.footer-links a{font-family:var(--sans);font-size:11px;letter-spacing:0.08em;color:rgba(255,255,255,0.35);text-decoration:none;text-transform:uppercase;cursor:pointer;transition:color .2s}
+.footer-links a:hover{color:var(--gold-light)}
+.footer-bottom{padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center}
+.footer-legal{font-family:var(--sans);font-size:11px;color:rgba(255,255,255,0.2)}
+.footer-bar{width:36px;height:1px;background:var(--gold);opacity:0.4}
+
+/* ── ANIMATIONS ── */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.4,0,.2,1),transform .7s cubic-bezier(.4,0,.2,1)}
+.reveal.visible{opacity:1;transform:none}
+.reveal-delay-1{transition-delay:.1s}
+.reveal-delay-2{transition-delay:.2s}
+.reveal-delay-3{transition-delay:.3s}
+.reveal-delay-4{transition-delay:.4s}
+.reveal-delay-5{transition-delay:.5s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+.hero-inner{grid-template-columns:1fr;padding:2rem 1.5rem}.hero-card{display:none}
+.expertises-grid{grid-template-columns:1fr}
+.cabinet-grid,.approche-inner,.contact-grid,.associes-intro{grid-template-columns:1fr;gap:3rem}
+.associes-grid{grid-template-columns:1fr 1fr}
+.form-row{grid-template-columns:1fr}
+.nav-links{display:none}
+}
+@media(max-width:600px){.associes-grid{grid-template-columns:1fr}}
+
+/* ── PAGE TRANSITIONS ── */
+.page{display:none}
+.page.active{display:block}
+#page-home.active,.page-section{display:block}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <span class="nav-brand-name">D &amp; M Avocats</span>
+      <span class="nav-brand-sub">Lille · Paris · Lyon</span>
+    </div>
+    <ul class="nav-links">
+      <li><a onclick="scrollTo('hero')" class="active">Accueil</a></li>
+      <li><a onclick="scrollTo('expertises')">Expertises</a></li>
+      <li><a onclick="scrollTo('cabinet')">Le cabinet</a></li>
+      <li><a onclick="scrollTo('associes')">Associés</a></li>
+      <li><a onclick="scrollTo('approche')">Notre approche</a></li>
+      <li><a onclick="scrollTo('contact')">Contact</a></li>
+    </ul>
+    <a class="nav-cta" onclick="scrollTo('contact')">Consultation →</a>
+    <div class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+<div class="nav-mobile" id="nav-mobile">
+  <a onclick="mobileNav('hero')">Accueil</a>
+  <a onclick="mobileNav('expertises')">Expertises</a>
+  <a onclick="mobileNav('cabinet')">Le cabinet</a>
+  <a onclick="mobileNav('associes')">Associés</a>
+  <a onclick="mobileNav('approche')">Notre approche</a>
+  <a onclick="mobileNav('contact')">Contact &amp; rendez-vous</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-lines"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">Cabinet d'avocats fondé en 1979</div>
+      <h1 class="hero-h1">Le droit au service<br>de <em>votre protection</em></h1>
+      <p class="hero-lead">D &amp; M Avocats accompagne salariés, agents publics et entreprises dans leurs litiges les plus complexes — avec rigueur, indépendance et une connaissance approfondie du droit social et administratif.</p>
+      <div style="margin-bottom:2.8rem;padding:1.2rem 0 1.2rem 1.5rem;border-left:2px solid var(--gold);opacity:0.85">
+        <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.15rem;font-style:italic;color:rgba(255,255,255,0.9);line-height:1.5;margin-bottom:0.4rem">« Ἀεὶ ὁ νόμος βασιλεύει »</div>
+        <div style="font-family:'Jost',sans-serif;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-light)">La loi règne toujours — Solon, législateur d'Athènes, VIe s. av. J.-C.</div>
+      </div>
+      <div class="hero-actions">
+        <a class="btn-primary" onclick="scrollTo('contact')">Prendre rendez-vous</a>
+        <a class="btn-ghost-light" onclick="scrollTo('expertises')">Nos expertises</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-label">Le cabinet en chiffres</div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">38</div>
+        <div class="hero-stat-lbl">Avocats</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">3</div>
+        <div class="hero-stat-lbl">Bureaux — Lille · Paris · Lyon</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">45</div>
+        <div class="hero-stat-lbl">Années d'exercice</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">+3000</div>
+        <div class="hero-stat-lbl">Dossiers traités</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll" onclick="scrollTo('expertises')">
+    <div class="hero-scroll-line"></div>
+    <span class="hero-scroll-lbl">Découvrir</span>
+  </div>
+</section>
+
+<!-- EXPERTISES -->
+<section id="expertises">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-eyebrow">Domaines d'expertise</div>
+      <h2 class="section-h2">Un droit pointu,<br><em>des résultats concrets</em></h2>
+      <div class="rule"></div>
+      <p class="section-lead">Nos associés interviennent dans des domaines du droit à forte technicité, au service de particuliers, d'agents publics et de structures privées.</p>
+    </div>
+    <div class="expertises-grid">
+      <div class="expertise-card reveal reveal-delay-1">
+        <span class="expertise-num">01</span>
+        <h3 class="expertise-title">Droit de la fonction publique</h3>
+        <p class="expertise-body">Contentieux statutaires, accidents de service, CITIS, mise à la retraite d'office, sanctions disciplinaires. Nous défendons les agents des trois versants de la fonction publique devant les tribunaux administratifs.</p>
+        <div class="expertise-tags">
+          <span class="expertise-tag">FPH</span>
+          <span class="expertise-tag">FPE</span>
+          <span class="expertise-tag">FPT</span>
+          <span class="expertise-tag">CITIS</span>
+        </div>
+      </div>
+      <div class="expertise-card reveal reveal-delay-2">
+        <span class="expertise-num">02</span>
+        <h3 class="expertise-title">Droit du travail &amp; droit social</h3>
+        <p class="expertise-body">Ruptures du contrat de travail, harcèlement moral et sexuel, discrimination, négociation collective, représentation des salariés. Un accompagnement de bout en bout, du conseil au prétoire.</p>
+        <div class="expertise-tags">
+          <span class="expertise-tag">Licenciement</span>
+          <span class="expertise-tag">Harcèlement</span>
+          <span class="expertise-tag">IRP</span>
+        </div>
+      </div>
+      <div class="expertise-card reveal reveal-delay-3">
+        <span class="expertise-num">03</span>
+        <h3 class="expertise-title">Droit administratif</h3>
+        <p class="expertise-body">Recours pour excès de pouvoir, responsabilité de l'État et des collectivités, marchés publics, urbanisme. Notre maîtrise du contentieux administratif vous garantit une défense efficace face à la puissance publique.</p>
+        <div class="expertise-tags">
+          <span class="expertise-tag">REP</span>
+          <span class="expertise-tag">Responsabilité</span>
+          <span class="expertise-tag">Marchés publics</span>
+        </div>
+      </div>
+      <div class="expertise-card reveal reveal-delay-1">
+        <span class="expertise-num">04</span>
+        <h3 class="expertise-title">Droit médical &amp; dommages corporels</h3>
+        <p class="expertise-body">Responsabilité médicale, accidents médicaux, ONIAM, évaluation et indemnisation des préjudices selon la nomenclature Dintilhac. Une expertise rare, au croisement du droit et de la médecine.</p>
+        <div class="expertise-tags">
+          <span class="expertise-tag">ONIAM</span>
+          <span class="expertise-tag">Dintilhac</span>
+          <span class="expertise-tag">Expertise judiciaire</span>
+        </div>
+      </div>
+      <div class="expertise-card reveal reveal-delay-2">
+        <span class="expertise-num">05</span>
+        <h3 class="expertise-title">Droit privé &amp; contentieux civil</h3>
+        <p class="expertise-body">Contentieux contractuels, responsabilité civile, droit de la famille, successions et patrimoines. Nous traitons les litiges civils complexes avec la même exigence que nos dossiers publics.</p>
+        <div class="expertise-tags">
+          <span class="expertise-tag">Contrats</span>
+          <span class="expertise-tag">Famille</span>
+          <span class="expertise-tag">Successions</span>
+        </div>
+      </div>
+      <div class="expertise-card reveal reveal-delay-3">
+        <span class="expertise-num">06</span>
+        <h3 class="expertise-title">Défense pénale &amp; politique</h3>
+        <p class="expertise-body">Droit pénal de la fonction publique, prise illégale d'intérêts, atteintes à la probité, droit pénal de la presse. Notre practice couvre les enjeux à l'intersection du politique, de l'institutionnel et du pénal.</p>
+        <div class="expertise-tags">
+          <span class="expertise-tag">Probité</span>
+          <span class="expertise-tag">Presse</span>
+          <span class="expertise-tag">Pénal</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LE CABINET -->
+<section id="cabinet">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-eyebrow" style="color:var(--gold-light)"><span style="background:var(--gold);display:inline-block;width:24px;height:1px;margin-right:10px;vertical-align:middle"></span>Le cabinet</div>
+      <h2 class="section-h2">Une structure indépendante,<br><em>une exigence absolue</em></h2>
+      <div class="rule"></div>
+      <p class="section-lead">Fondé en 2008 à Lille, D &amp; M Avocats s'est construit sur un principe simple : l'indépendance totale à l'égard de toute structure institutionnelle ou financière.</p>
+    </div>
+    <div class="cabinet-grid">
+      <div class="cabinet-values reveal reveal-delay-1">
+        <div class="value-item">
+          <span class="value-num">I.</span>
+          <div>
+            <div class="value-title">Indépendance</div>
+            <div class="value-body">Aucun conflit d'intérêts, aucun lien capitalistique avec des groupes d'assurance ou des structures institutionnelles. Votre dossier est défendu sans compromis.</div>
+          </div>
+        </div>
+        <div class="value-item">
+          <span class="value-num">II.</span>
+          <div>
+            <div class="value-title">Technicité</div>
+            <div class="value-body">Nos associés cumulent masters spécialisés, diplômes universitaires et formations continues. La maîtrise du droit, point à point, est notre standard minimal.</div>
+          </div>
+        </div>
+        <div class="value-item">
+          <span class="value-num">III.</span>
+          <div>
+            <div class="value-title">Proximité</div>
+            <div class="value-body">Un avocat référent par dossier, joignable et réactif. Nos clients ne sont pas des numéros. Chaque situation est traitée avec la singularité qu'elle mérite.</div>
+          </div>
+        </div>
+        <div class="value-item">
+          <span class="value-num">IV.</span>
+          <div>
+            <div class="value-title">Résultats</div>
+            <div class="value-body">Nous privilégions la stratégie contentieuse efficace : négociation quand elle sert, procédure quand elle s'impose. L'objectif est toujours le résultat, pas la facture.</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="cabinet-quote">
+          <blockquote>« Le droit est un outil au service des personnes, pas un labyrinthe pour les décourager. Notre rôle est de vous en donner les clés. »</blockquote>
+          <cite>Maître Marc Dufresne — Associé fondateur</cite>
+        </div>
+        <div class="cabinet-stats">
+          <div class="c-stat">
+            <div class="c-stat-n">38</div>
+            <div class="c-stat-l">Avocats</div>
+          </div>
+          <div class="c-stat">
+            <div class="c-stat-n">+3000</div>
+            <div class="c-stat-l">Dossiers traités</div>
+          </div>
+          <div class="c-stat">
+            <div class="c-stat-n">45 ans</div>
+            <div class="c-stat-l">D'exercice</div>
+          </div>
+          <div class="c-stat">
+            <div class="c-stat-n">3</div>
+            <div class="c-stat-l">Barreaux — Nord, Paris, Rhône</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ASSOCIÉS -->
+<section id="associes">
+  <div class="section-inner">
+    <div class="associes-intro">
+      <div class="reveal">
+        <div class="section-eyebrow">L'équipe</div>
+        <h2 class="section-h2">Six associés,<br><em>une vision commune</em></h2>
+        <div class="rule"></div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <p class="section-lead">Chacun de nos associés est spécialiste d'un ou plusieurs domaines du droit. Leur collaboration active sur les dossiers complexes vous garantit une défense sans angle mort.</p>
+      </div>
+    </div>
+    <div class="associes-grid">
+      <div class="avocat-card reveal reveal-delay-1">
+        <div class="avocat-photo" style="background:#D8E2F0">
+          <div class="avocat-initials">MD</div>
+        </div>
+        <div class="avocat-body">
+          <div class="avocat-name">Maître Marc Dufresne</div>
+          <div class="avocat-role">Associé fondateur</div>
+          <div class="avocat-spec">Droit de la fonction publique · Accidents de service · CITIS · Responsabilité hospitalière</div>
+          <div class="avocat-bar"></div>
+          <div class="avocat-edu">Master droit médical · D.U. dommages corporels</div>
+        </div>
+      </div>
+      <div class="avocat-card reveal reveal-delay-2">
+        <div class="avocat-photo" style="background:#E2D8D8">
+          <div class="avocat-initials">CT</div>
+        </div>
+        <div class="avocat-body">
+          <div class="avocat-name">Maître Caroline Taillez</div>
+          <div class="avocat-role">Associée</div>
+          <div class="avocat-spec">Droit du travail · Harcèlement moral et sexuel · Négociation collective · IRP</div>
+          <div class="avocat-bar"></div>
+          <div class="avocat-edu">Master de droit social · DESS droit du travail</div>
+        </div>
+      </div>
+      <div class="avocat-card reveal reveal-delay-3">
+        <div class="avocat-photo" style="background:#D8E0D8">
+          <div class="avocat-initials">AD</div>
+        </div>
+        <div class="avocat-body">
+          <div class="avocat-name">Maître Alix Dupré</div>
+          <div class="avocat-role">Associée</div>
+          <div class="avocat-spec">Droit administratif · Marchés publics · Urbanisme · Droit politique de défense</div>
+          <div class="avocat-bar"></div>
+          <div class="avocat-edu">Master droit politique de défense · Sciences Po Paris</div>
+        </div>
+      </div>
+      <div class="avocat-card reveal reveal-delay-1">
+        <div class="avocat-photo" style="background:#E0DCD0">
+          <div class="avocat-initials">ZP</div>
+        </div>
+        <div class="avocat-body">
+          <div class="avocat-name">Maître Zélie Pluchard</div>
+          <div class="avocat-role">Associée</div>
+          <div class="avocat-spec">Droit privé · Responsabilité civile · Droit de la famille · Successions</div>
+          <div class="avocat-bar"></div>
+          <div class="avocat-edu">Master droit privé · DU contentieux civil</div>
+        </div>
+      </div>
+      <div class="avocat-card reveal reveal-delay-2">
+        <div class="avocat-photo" style="background:#D8D8E2">
+          <div class="avocat-initials">AT</div>
+        </div>
+        <div class="avocat-body">
+          <div class="avocat-name">Maître Assiya Talbi</div>
+          <div class="avocat-role">Associée</div>
+          <div class="avocat-spec">Droit du travail · Discrimination · Égalité professionnelle · Droit de la sécurité sociale</div>
+          <div class="avocat-bar"></div>
+          <div class="avocat-edu">Master en droit social · Master droit des affaires</div>
+        </div>
+      </div>
+      <div class="avocat-card reveal reveal-delay-3">
+        <div class="avocat-photo" style="background:#DCE0E4">
+          <div class="avocat-initials">JL</div>
+        </div>
+        <div class="avocat-body">
+          <div class="avocat-name">Maître Jade L'Echevin</div>
+          <div class="avocat-role">Associée</div>
+          <div class="avocat-spec">Droit social · Fonction publique hospitalière · Contentieux de la protection sociale</div>
+          <div class="avocat-bar"></div>
+          <div class="avocat-edu">Master droit social · Spécialisation FPH</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROCHE -->
+<section id="approche">
+  <div class="section-inner">
+    <div class="approche-inner">
+      <div>
+        <div class="reveal">
+          <div class="section-eyebrow">Notre méthode</div>
+          <h2 class="section-h2">Du conseil à<br><em>la décision de justice</em></h2>
+          <div class="rule"></div>
+          <p class="section-lead">Chaque dossier suit une progression rigoureuse, de l'analyse initiale jusqu'à la résolution — qu'elle soit amiable ou contentieuse.</p>
+        </div>
+        <div class="approche-steps">
+          <div class="step reveal reveal-delay-1">
+            <span class="step-num">01</span>
+            <div>
+              <div class="step-title">Consultation initiale</div>
+              <div class="step-body">Analyse des faits, identification des fondements juridiques, évaluation des chances de succès. Un avis franc, sans faux espoirs ni faux pessimisme.</div>
+            </div>
+          </div>
+          <div class="step reveal reveal-delay-2">
+            <span class="step-num">02</span>
+            <div>
+              <div class="step-title">Stratégie sur-mesure</div>
+              <div class="step-body">Définition d'une stratégie adaptée à vos objectifs : recours amiable, médiation, procédure d'urgence ou contentieux au fond.</div>
+            </div>
+          </div>
+          <div class="step reveal reveal-delay-3">
+            <span class="step-num">03</span>
+            <div>
+              <div class="step-title">Instruction du dossier</div>
+              <div class="step-body">Constitution des pièces, rédaction des mémoires et requêtes, coordination avec experts judiciaires si nécessaire. Chaque argument est étayé, chaque référence vérifiée.</div>
+            </div>
+          </div>
+          <div class="step reveal reveal-delay-4">
+            <span class="step-num">04</span>
+            <div>
+              <div class="step-title">Représentation &amp; plaidoirie</div>
+              <div class="step-body">Défense devant le tribunal compétent — Conseil de prud'hommes, Tribunal Administratif, Cour d'appel — avec un suivi de chaque audience.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="approche-visual reveal reveal-delay-2">
+        <div class="approche-visual-label">Juridictions d'intervention</div>
+        <div class="domaine-item">
+          <span class="domaine-name">Tribunal Administratif</span>
+          <div class="domaine-bar-wrap"><div class="domaine-bar-fill" style="width:95px"></div></div>
+        </div>
+        <div class="domaine-item">
+          <span class="domaine-name">Cour Administrative d'Appel</span>
+          <div class="domaine-bar-wrap"><div class="domaine-bar-fill" style="width:80px"></div></div>
+        </div>
+        <div class="domaine-item">
+          <span class="domaine-name">Conseil d'État</span>
+          <div class="domaine-bar-wrap"><div class="domaine-bar-fill" style="width:60px"></div></div>
+        </div>
+        <div class="domaine-item">
+          <span class="domaine-name">Conseil de Prud'hommes</span>
+          <div class="domaine-bar-wrap"><div class="domaine-bar-fill" style="width:88px"></div></div>
+        </div>
+        <div class="domaine-item">
+          <span class="domaine-name">Cour d'appel</span>
+          <div class="domaine-bar-wrap"><div class="domaine-bar-fill" style="width:70px"></div></div>
+        </div>
+        <div class="domaine-item">
+          <span class="domaine-name">Cour de cassation</span>
+          <div class="domaine-bar-wrap"><div class="domaine-bar-fill" style="width:40px"></div></div>
+        </div>
+        <div class="domaine-item">
+          <span class="domaine-name">CJUE — Strasbourg</span>
+          <div class="domaine-bar-wrap"><div class="domaine-bar-fill" style="width:25px"></div></div>
+        </div>
+        <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08)">
+          <div style="font-family:var(--sans);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-light);margin-bottom:1rem">Honoraires</div>
+          <p style="font-family:var(--serif);font-size:14px;color:rgba(255,255,255,0.55);line-height:1.75">Consultation initiale fixe · Honoraires au temps passé ou forfait selon la nature du dossier · Aide juridictionnelle acceptée · Convention d'honoraires systématique avant toute intervention.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-eyebrow" style="color:var(--gold-light)"><span style="background:var(--gold);display:inline-block;width:24px;height:1px;margin-right:10px;vertical-align:middle"></span>Contact &amp; rendez-vous</div>
+      <h2 class="section-h2">Exposez-nous<br><em>votre situation</em></h2>
+      <div class="rule"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal reveal-delay-1">
+        <div class="contact-info-block">
+          <div class="contact-city">Siège — Lille</div>
+          <div class="contact-address">11 bis, rue Château Joseph Beghin<br>59239 Thumeries</div>
+        </div>
+        <div class="contact-rule"></div>
+        <div class="contact-info-block">
+          <div class="contact-city">Bureau — Paris</div>
+          <div class="contact-address">44, avenue de l'Opéra<br>75002 Paris</div>
+        </div>
+        <div class="contact-rule"></div>
+        <div class="contact-info-block">
+          <div class="contact-city">Bureau — Lyon</div>
+          <div class="contact-address">8, place des Jacobins<br>69002 Lyon</div>
+        </div>
+        <div class="contact-rule"></div>
+        <div style="font-family:var(--sans);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-light);margin-bottom:0.8rem">Secrétariat</div>
+        <div style="font-family:var(--serif);font-size:15px;color:rgba(255,255,255,0.55)">Du lundi au vendredi, 9h00 – 18h00</div>
+        <div style="margin-top:1rem">
+          <a href="mailto:contact@dm-avocats.fr" style="font-family:var(--sans);font-size:13px;color:var(--gold-light);text-decoration:none;letter-spacing:0.06em;border-bottom:1px solid rgba(184,151,58,0.35);padding-bottom:2px;transition:border-color .2s">contact@dm-avocats.fr</a>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="contact-form">
+          <div data-fs-success style="display:none;font-family:var(--sans);font-size:13px;color:var(--gold-light);letter-spacing:0.06em;padding:1.2rem 1.5rem;border:1px solid rgba(184,151,58,0.35);margin-bottom:1rem">
+            Votre message a bien été envoyé. Nous vous répondrons dans les 48 heures.
+          </div>
+          <div data-fs-error style="display:none;font-family:var(--sans);font-size:12px;color:#F09595;padding:1rem 1.5rem;border:1px solid rgba(240,149,149,0.3);margin-bottom:1rem"></div>
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required data-fs-field>
+                <span data-fs-error="prenom" style="font-size:11px;color:#F09595;margin-top:4px"></span>
+              </div>
+              <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required data-fs-field>
+                <span data-fs-error="nom" style="font-size:11px;color:#F09595;margin-top:4px"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="email@exemple.fr" required data-fs-field>
+                <span data-fs-error="email" style="font-size:11px;color:#F09595;margin-top:4px"></span>
+              </div>
+              <div class="form-group">
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="06 XX XX XX XX" data-fs-field>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="domaine">Domaine juridique concerné</label>
+              <select id="domaine" name="domaine" data-fs-field>
+                <option value="">Sélectionnez un domaine</option>
+                <option>Droit de la fonction publique</option>
+                <option>Droit du travail</option>
+                <option>Droit administratif</option>
+                <option>Droit médical &amp; dommages corporels</option>
+                <option>Droit privé &amp; contentieux civil</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Votre situation (en quelques mots)</label>
+              <textarea id="message" name="message" placeholder="Décrivez brièvement votre situation juridique…" required data-fs-field></textarea>
+              <span data-fs-error="message" style="font-size:11px;color:#F09595;margin-top:4px"></span>
+            </div>
+            <button type="submit" class="form-submit" data-fs-submit-btn>Envoyer la demande →</button>
+            <div class="form-note">Vos informations sont confidentielles et couvertes par le secret professionnel. Vous pouvez également nous écrire directement à <a href="mailto:contact@dm-avocats.fr" style="color:var(--gold-light);text-decoration:none">contact@dm-avocats.fr</a></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">D &amp; M Avocats</div>
+        <div class="footer-cities">Lille · Paris · Lyon</div>
+      </div>
+      <div class="footer-links">
+        <a onclick="scrollTo('expertises')">Expertises</a>
+        <a onclick="scrollTo('associes')">Associés</a>
+        <a onclick="scrollTo('approche')">Méthode</a>
+        <a onclick="scrollTo('contact')">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-legal">© 2026 D &amp; M Avocats — Tous droits réservés · Barreaux de Lille, Paris, Lyon · <a href="mailto:contact@dm-avocats.fr" style="color:rgba(255,255,255,0.3);text-decoration:none">contact@dm-avocats.fr</a> · Mentions légales · RGPD</div>
+      <div class="footer-bar"></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function scrollTo(id){
+  document.getElementById(id).scrollIntoView({behavior:'smooth'});
+  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
+}
+function toggleMenu(){
+  document.getElementById('nav-mobile').classList.toggle('open');
+}
+function mobileNav(id){
+  document.getElementById('nav-mobile').classList.remove('open');
+  document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}
+  });
+},{threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+const navLinks=document.querySelectorAll('.nav-links a');
+const sections=['hero','expertises','cabinet','associes','approche','contact'];
+const sectionObserver=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const id=e.target.id;
+      const idx=sections.indexOf(id);
+      navLinks.forEach(a=>a.classList.remove('active'));
+      if(navLinks[idx])navLinks[idx].classList.add('active');
+    }
+  });
+},{threshold:0.3});
+sections.forEach(id=>{const el=document.getElementById(id);if(el)sectionObserver.observe(el);});
+
+window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+formspree('initForm', { formElement: '#contact-form', formId: 'mzdokkol' });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+</body>
+</html>
